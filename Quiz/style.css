@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background: linear-gradient(180deg, #0b0f1a, #111827);
+    padding: 36px;
+    width: 430px;
+    border-radius: 14px;
+    box-shadow: 0 0 30px rgba(236, 72, 153, 0.35),
+                0 0 60px rgba(234, 179, 8, 0.15);
+    animation: glowIn 0.7s ease;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #facc15, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+}
+
+h2 {
+    text-align: center;
+    color: #e5e7eb;
+}
+
+p {
+    text-align: center;
+    color: #9ca3af;
+    margin-bottom: 26px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    padding: 14px 16px;
+    background: linear-gradient(90deg, #111827, #1f2933);
+    margin-bottom: 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border: 1px solid #1f2937;
+    color: #e5e7eb;
+}
+
+label:hover {
+    background: linear-gradient(90deg, #1f2937, #312e81);
+    box-shadow: 0 0 18px rgba(250, 204, 21, 0.35);
+    transform: translateY(-2px);
+}
+
+input {
+    margin-right: 14px;
+    accent-color: #facc15;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: linear-gradient(90deg, #facc15, #ec4899);
+    color: #000000;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 22px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 30px rgba(236, 72, 153, 0.6),
+                0 0 60px rgba(250, 204, 21, 0.4);
+    transform: scale(1.05);
+}
+
+#score {
+    font-size: 30px;
+    background: linear-gradient(90deg, #22d3ee, #facc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#feedback {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #22d3ee, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes glowIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
