@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="quiz-container">
+        <section id="intro">
+            <h1>Interactive Quiz</h1>
+            <p>Test your basic web development knowledge. Select the correct answer and move 
+               through the quiz to see your final score.</p>
+            <button id="startBtn">Start Quiz</button>
+        </section>
+
+        <section id="quiz" class="hidden">
+            <h2 id="question"></h2>
+            <form id="options"></form>
+            <button id="nextBtn">Next</button>
+        </section>
+
+        <section id="result" class="hidden">
+            <h2 id="score"></h2>
+            <p id="feedback"></p>
+            <button id="restartBtn">Restart Quiz</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
