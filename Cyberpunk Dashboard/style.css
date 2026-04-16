@@ -92,3 +92,91 @@ flex-direction:column;
 color:#ff00cc;
 margin-bottom:6px;
 }
+
+#terminal-input {
+caret-color:#00ffff;
+}
+
+#terminal-output {
+flex:1;
+overflow:auto;
+color:#00ffcc;
+}
+
+#mission-list li:hover {
+color:#ffff00;
+text-shadow:0 0 6px #ffff00;
+}
+
+input {
+background:black;
+border:1px solid #ff00cc;
+color:white;
+padding:6px;
+outline:none;
+}
+
+.meter {
+height:16px;
+border:1px solid #00ffff;
+margin:8px 0;
+}
+
+.meter span {
+display:block;
+height:100%;
+background:linear-gradient(90deg,#00ffff,#ff00cc,#ffff00);
+width:40%;
+animation:pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+to {filter:brightness(1.5)}
+}
+
+button {
+background:#ff00cc;
+border:none;
+padding:8px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.cred #credValue {
+font-size:36px;
+color:#ffff00;
+margin-bottom:10px;
+}
+
+.cred-bar {
+height:14px;
+border:1px solid #ffff00;
+}
+
+.cred-bar span {
+display:block;
+height:100%;
+background:linear-gradient(90deg,#ff00cc,#ffff00);
+width:42%;
+}
+
+.feed {
+font-size:14px;
+overflow:hidden;
+}
+
+#feed div {
+margin-bottom:8px;
+color:#00ffcc;
+}
+
+.implants li {
+margin:6px 0;
+color:#ff00cc;
+cursor:pointer;
+}
+
+.implants li.active {
+color:#00ffff;
+text-shadow:0 0 8px #00ffff;
+}
