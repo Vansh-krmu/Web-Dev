@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Netrunner OS</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="glitch.css">
+</head>
+<body>
+
+<div id="login">
+<h1>NETRUNNER ACCESS</h1>
+<input id="user" placeholder="username">
+<input id="pass" type="password" placeholder="passphrase">
+<button id="loginBtn">JACK IN</button>
+</div>
+
+<div id="boot" class="hidden">
+<div class="boot-line" data-text="Neural sync established..."></div>
+<div class="boot-line" data-text="ICE bypassed..."></div>
+<div class="boot-line" data-text="Welcome to Night City"></div>
+</div>
+
+<div id="os" class="hidden">
+
+<header>
+<div class="logo">NETRUNNER_OS</div>
+<div id="clock"></div>
+</header>
+
+<section class="panels">
+
+<div class="panel terminal">
+<div class="panel-title">Terminal</div>
+<div id="terminal-output"></div>
+<input id="terminal-input" placeholder="command">
+</div>
+
+<div class="panel missions">
+<div class="panel-title">Missions</div>
+<ul id="mission-list"></ul>
+<input id="mission-input" placeholder="new mission">
+</div>
+
+<div class="panel system">
+<div class="panel-title">System</div>
+<div class="meter"><span id="cpu"></span></div>
+<div class="meter"><span id="net"></span></div>
+<div class="meter"><span id="mem"></span></div>
+<button id="hackBtn">HACK MODE</button>
+</div>
+
+<div class="panel cred">
+<div class="panel-title">Street Cred</div>
+<div id="credValue">42</div>
+<div class="cred-bar"><span id="credBar"></span></div>
+</div>
+
+<div class="panel feed">
+<div class="panel-title">Night City Feed</div>
+<div id="feed"></div>
+</div>
+
+<div class="panel implants">
+<div class="panel-title">Active Implants</div>
+<ul id="implants">
+<li>Kiroshi Optics</li>
+<li>Reflex Booster</li>
+<li>Subdermal Armor</li>
+</ul>
+</div>
+
+</section>
+</div>
+
+<audio id="keySound" src="sounds/key.mp3"></audio>
+<audio id="glitchSound" src="sounds/glitch.mp3"></audio>
+
+<script src="app.js"></script>
+</body>
+</html>
