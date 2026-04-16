@@ -1,7 +1,3 @@
-=================================================================================
-**NOT COMPLETE. DO NOT RUN YET.**
-
-=================================================================================
 # NETRUNNER_OS
 
 A cyberpunk-inspired browser-based **operating system simulator** built with vanilla web technologies.
