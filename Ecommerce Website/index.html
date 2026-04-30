@@ -1,0 +1,61 @@
+<!--
+Project Title: Simple E-Commerce Website
+Name: Your Name
+Date: 23 April 2026
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My Mini Store 🛒</h1>
+    <p>Welcome to our simple shopping website</p>
+</header>
+
+<main>
+
+    <section class="products">
+        <h2>Products</h2>
+
+        <div class="product">
+            <h3>Headphones</h3>
+            <p>High quality sound</p>
+            <p>Price: ₹1500</p>
+            <button onclick="addToCart('Headphones', 1500)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h3>Smart Watch</h3>
+            <p>Track your fitness</p>
+            <p>Price: ₹3000</p>
+            <button onclick="addToCart('Smart Watch', 3000)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h3>Backpack</h3>
+            <p>Stylish and durable</p>
+            <p>Price: ₹1200</p>
+            <button onclick="addToCart('Backpack', 1200)">Add to Cart</button>
+        </div>
+
+    </section>
+
+    <section class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+
+        <h3>Total: ₹<span id="total">0</span></h3>
+
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
