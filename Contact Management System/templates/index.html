@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Contact List</h1>
+
+<form method="GET" action="/">
+    <input type="text" name="search" placeholder="Search contacts..." value="{{ search }}">
+    <button type="submit">Search</button>
+</form>
+
+<br>
+
+{% for c in contacts %}
+<div class="card">
+    <h3>{{ c.name }}</h3>
+    <p>📞 {{ c.phone }}</p>
+    <p>📧 {{ c.email }}</p>
+
+    <a href="/edit/{{ c.id }}">Edit</a>
+    <a href="/delete/{{ c.id }}" onclick="return confirm('Delete contact?')">Delete</a>
+</div>
+{% else %}
+<p>No contacts found.</p>
+{% endfor %}
+
+{% endblock %}
